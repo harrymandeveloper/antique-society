@@ -5,6 +5,7 @@ Original design by Kerve.
 
 Re-created in HTML, CSS and JS from scratch in 48 hours.
 
+
 ## Installation
 
 Download all files. Open index.html and away you go!
