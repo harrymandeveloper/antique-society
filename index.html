@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <!--
+
+	Site Design by KERVE
+
+    Built by Harry Man  
+    @harrymantweets
+
+    -->
+
+  <head>
+    <!-- Title -->
+    <title>The Antique Society</title>
+
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- In production we'd need our description in here. -->
+
+
+    <!-- Favicons  -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="favicons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="favicons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="favicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+
+
+    <!-- PRE-FETCH FOR IMAGES SPECIFIC TO SANDBOX URL -->
+
+    <link rel="dns-prefetch" href="www.http://manmadebooks.co.uk/Harry_Man/sandbox/antique_society/img/desktop_hero.jpg">
+    <link rel="dns-prefetch" href="www.http://manmadebooks.co.uk/Harry_Man/sandbox/antique_society/img/mobile_hero.jpg">
+    
+    <!-- BROWSER COMPATABILITY -->
+    <!-- In production, I would add this in for you -->
+
+    <!-- GOOGLE ANALYTICS -->
+
+
+    <!-- SCRIPTS -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/parallax.min.js"></script>
+
+    <script type="text/javascript">
+      function menuToggle() {
+        var nav = document.getElementById("menu-overlay");
+        nav.classList.toggle("active");
+
+        var nav = document.getElementById("toggleIcon");
+        nav.classList.toggle("active");
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <!-- Mobile Nav -->
+
+      <div class="mobile-header">
+        <div id="toggleIcon" onClick="menuToggle()"></div>
+        <div id="menu-overlay" onClick="menuToggle()">
+          <ul>
+            <li><a data-target=".navbar-collapse" href="#">Home</a></li>
+            <li><a data-target=".navbar-collapse" href="#">News</a></li>
+            <li><a data-target=".navbar-collapse" href="#">Events</a></li>
+            <li><a data-target=".navbar-collapse" href="#">Journals</a></li>
+            <li><a data-target=".navbar-collapse" href="#">Newsletters</a></li>
+            <li><a data-target=".navbar-collapse" href="#">Research</a></li>
+            <li><a data-target=".navbar-collapse" href="#">Grants</a></li>
+            <li><a data-target=".navbar-collapse" href="#">Donations</a></li>
+            <li><a data-target=".navbar-collapse" href="#">About Us</a></li>
+            <li><a data-target=".navbar-collapse" href="#">Membership</a></li>
+            <li>
+              <a data-target=".navbar-collapse" href="#">Contact & Links</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- End of Mobile Nav -->
+
+      <!-- Desktop Nav -->
+
+      <div class="navbar">
+        <nav class="navbar-items">
+          <div class="navbar-link navbar-link-brand">
+            The Antique Society
+          </div>
+          <div class="navbar-link navbar-link-toggle">
+            <div class="burger"></div>
+          </div>
+        </nav>
+        <nav class="navbar-items navbar-items-right">
+          <div class="navbar-link"><a href="#">News</a></div>
+          <div class="navbar-link"><a href="#">Events</a></div>
+          <div class="navbar-link"><a href="#">Journals</a></div>
+          <div class="navbar-link"><a href="#">Newsletters</a></div>
+          <div class="navbar-link"><a href="#">Research</a></div>
+          <div class="navbar-link"><a href="#">Grants</a></div>
+          <div class="navbar-link"><a href="#">Donations</a></div>
+          <div class="navbar-link"><a href="#">About Us</a></div>
+          <div class="navbar-link"><a href="#">Membership</a></div>
+        </nav>
+      </div>
+      <!-- End of Desktop Nav -->
+    </header>
+
+    <main>
+
+      <!-- Desktop Hero Section -->
+
+      <section class="hero">
+        <div
+          id="desktop"
+          class="parallax-window"
+          data-parallax="scroll"
+          data-image-src="./img/desktop_hero.jpg"
+        >
+          <div class="hero-text">
+            <h2>The</h2>
+            <h1>
+              Antique <br />
+              Society
+            </h1>
+            <div class="hero-line">_________</div>
+            <h3>
+              Ipsum lorum del sora asti <br />
+              del verde cresti sa.
+            </h3>
+            <p>
+              <span class="chair-caption">
+                c.1770 &nbsp; <span class="caption-hypen">/</span> &nbsp;
+              </span>
+              <span class="chair-caption-detail">
+                Armchair by Michel Gourdin - France <br />and two lines if
+                required.
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- End of Desktop Hero Section -->
+
+      <!-- Mobile Hero Section -->
+
+      <section class="mobile-hero">
+        <div
+          class="parallax-window"
+          data-parallax="scroll"
+          data-image-src="./img/mobile_hero.jpg"
+          data-position="top"
+        >
+          <div class="mobile-hero-text">
+            <p class="mobile-hero-the">The</p>
+            <br />
+            <h1>
+              Antique <br />
+              Society
+            </h1>
+            <br />
+          </div>
+        </div>
+        <div class="mobile-caption-container">
+          <div class="mobile-chair-caption">
+            c.1770 &nbsp; <span class="caption-hypen">/ &nbsp; </span>
+            <span class="mobile-chair-caption-detail">
+              Armchair by Michel Gourdin - France and a wrap if longer text.
+            </span>
+            <p>
+              <br />
+              <img src="./img/btn-arrow-white-down.png" alt="" />
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- End of Mobile Hero Section -->
+
+      <section class="about">
+        <h1>
+          Antique<br />
+          Appreciation <br />since 1964.
+        </h1>
+        <div class="line">_______</div>
+        <h2>
+          The Antique Society was founded to study furniture of all periods,
+          places and kinds, <br />
+          to increase knowledge and appreciation of it, and to assist in the
+          preservation of furniture and its records.
+        </h2>
+        <div class="about-image"></div>
+        <p>
+          <span class="table-caption">
+            c.1770 <span class="caption-hypen">/</span>
+          </span>
+          <span class="table-caption-detail">
+            Armchair by Michel Gourdin - France <br />and two lines if required.
+          </span>
+        </p>
+      </section>
+
+      <section class="events">
+        <p class="events-title">New Events</p>
+        <p class="mobile-events-title">New Event</p>
+        <div class="events-line"></div>
+        <div class="row">
+
+          <!-- N.B. Only items in column one will appear at widths below 768px. -->
+
+          <div class="col-1">
+            <h1>
+              <span class="events-month">21st Feb / </span>
+              <span class="events-year">2015</span>
+            </h1>
+            <h2 class="events-col-title">The 39th Annual Symposium 2015</h2>
+            <p class="events-col-body">
+              The Wallace Collection, Hertford House, Manchester Square, London,
+              W1 <br />Price: £45.00
+            </p>
+            <a href="#"><button class="button-dark">Event Details</button></a>
+            <button class="button-dark-mobile">View Events</button>
+          </div>
+          <div class="col-2">
+            <h1>
+              <span class="events-month">26th Feb / </span>
+              <span class="events-year">2015</span>
+            </h1>
+            <h2 class="events-col-title">Blythe House</h2>
+            <p class="events-col-body">
+              14:00 at 23 Blythe Road, London W14 0QX Building on the Society's
+              2014 symposium on carving, this visit will explore the subject.
+            </p>
+            <a href="#"><button class="button-dark">Event Details</button></a>
+          </div>
+          <div class="col-3">
+            <h1>
+              <span class="events-month">4th March / </span>
+              <span class="events-year">2015</span>
+            </h1>
+            <h2 class="events-col-title">
+              Study Weekend to York and North Yorkshire
+            </h2>
+            <p class="events-col-body">
+              This weekend will include private visits to Newby Hall with its
+              Adam designed tapestry room furnished by Thomas Chippendale and
+            </p>
+            <a href="#"><button class="button-dark">Event Details</button></a>
+          </div>
+        </div>
+      </section>
+    </main>
+      <footer>
+        <h2>The</h2>
+        <h1>
+          Antique<br />
+          Society
+        </h1>
+        <p class="contact"><a href="#">Contact</a> & <a href="#">Links</a></p>
+        <p class="charity">&copy; Antique Society is a registered charity.</p>
+        <p class="policy">
+          <a href="#">Privacy Policy</a> &nbsp; | &nbsp;
+          <a href="#">Terms & Conditions</a>
+        </p>
+      </footer>
+  </body>
+</html>
