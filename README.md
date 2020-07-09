@@ -5,7 +5,10 @@ Original design by Kerve.
 
 Re-created in HTML, CSS and JS from scratch in 48 hours.
 
+<a href="https://harrymandeveloper.github.io/antique-society/index.html">View live deployment here</a>
 
 ## Installation
 
 Download all files. Open index.html and away you go!
+
+
